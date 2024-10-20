@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 200;
+}
+
+main{
+  display: grid;
+  grid-template-areas: 
+    "nav nav"
+    "aside section"
+    "footer footer";
+    grid-template-columns: 15% auto;
+    grid-template-rows: 6%  auto 6%;
+    height: 100vh;
+}
+
+nav{
+  grid-area: nav;
+  background-color:bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img{
+  width: auto;
+  height:80%;
+}
+
+
+
+aside{
+  grid-area: aside;
+  background-color:aquamarine;
+}
+
+.sidebar_left{
+  display:flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.sidebar_left h2{
+  padding: 10px;
+}
+
+.sidebar_left li{
+  padding: 10px 5px 5px 30px;
+}
+
+section{
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.grid{
+  background-color:#d4cabb;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  margin: 0.5rem;
+  width: 80%;
+}
+
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.tarjeta img{
+  width: 60%;
+  height:90%;
+  cursor: zoom-in;
+}
+
+button{
+  border: none;
+  width: 80%;
+  background-color:burlywood;
+  padding: 10px;
+  font-weight: 400;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer{
+  grid-area: footer;
+  background-color:bisque;
+  text-align: center;
+  align-items: center;
+}
+
